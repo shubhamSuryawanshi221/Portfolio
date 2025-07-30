@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio</title>
+    </head>
+    <body>
+       
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">DATA INSIGHTS HUB</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active">
+                                <i class='bx bx-home'></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class='bx bx-user'></i> About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class='bx bx-code-alt'></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class='bx bx-briefcase'></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class='bx bx-envelope'></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid home-flex">
+                    <!-- Left: Typing Text -->
+                    <div class="home__text">
+                        <div class="home__text-card">
+                            <h1 class="home__title" id="typed-title">
+                                <span id="typed"></span>
+                            </h1>
+                            <p>
+                                Welcome to my profile! <br>
+                                I am passionate about Data Science, AI, ML, and turning data into actionable insights.<br>
+                                Skilled in Python, SQL, Power BI, Tableau, Excel, and more.
+                            </p>
+                            <a href="#portfolio" class="home__btn">View My Work</a>
+                        </div>
+                    </div>
+                    <!-- Right: Rotated Icons with Circle Lines -->
+                    <div class="circular-ring-wrapper">
+                        <div class="circular-ring">
+                            <!-- SVG Circles for visual rings -->
+                            <svg width="320" height="320" style="position:absolute; left:0; top:0; z-index:0;">
+                                <circle cx="160" cy="160" r="140" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none"/>
+                                <circle cx="160" cy="160" r="110" stroke="#f2c811" stroke-width="1" fill="none" stroke-dasharray="6,8"/>
+                                <circle cx="160" cy="160" r="80" stroke="#3776ab" stroke-width="1" fill="none" stroke-dasharray="4,6"/>
+                            </svg>
+                            <!-- Outer ring (10 icons) -->
+                            <div class="ring ring-outer"></div>
+                            <!-- Middle ring (6 icons) -->
+                            <div class="ring ring-middle"></div>
+                            <!-- Inner ring (4 icons) -->
+                            <div class="ring ring-inner"></div>
+                        </div>
+                        <script>
+                        const iconsOuter = [
+                            `<i class='bx bxl-python' title="Python" style="color:#3776ab;"></i>`,
+                            `<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/powerbi.svg" alt="Power BI" title="Power BI" style="width:32px;height:32px;">`,
+                            `<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tableau.svg" alt="Tableau" title="Tableau" style="width:32px;height:32px;">`,
+                            `<i class='bx bxl-microsoft' title="Excel" style="color:#217346;"></i>`,
+                            `<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/mysql.svg" alt="SQL" title="SQL" style="width:32px;height:32px;">`,
+                            `<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/xampp.svg" alt="XAMPP" title="XAMPP" style="width:32px;height:32px;">`,
+                            `<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/azureartificialintelligence.svg" alt="AI" title="AI" style="width:32px;height:32px;">`,
+                            `<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/scikitlearn.svg" alt="ML" title="Machine Learning" style="width:32px;height:32px;">`,
+                            `<i class='bx bxl-html5' title="HTML5" style="color:#e44d26;"></i>`,
+                            `<i class='bx bxl-css3' title="CSS3" style="color:#1572b6;"></i>`
+                        ];
+                        const iconsMiddle = [
+                            `<i class='bx bxl-javascript' title="JavaScript" style="color:#f7df1e;"></i>`,
+                            `<i class='bx bxl-git' title="Git" style="color:#f34f29;"></i>`,
+                            `<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/pandas.svg" alt="Pandas" title="Pandas" style="width:28px;height:28px;">`,
+                            `<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/numpy.svg" alt="NumPy" title="NumPy" style="width:28px;height:28px;">`,
+                            `<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoftpowerpoint.svg" alt="PowerPoint" title="PowerPoint" style="width:28px;height:28px;">`,
+                            `<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/visualstudiocode.svg" alt="VSCode" title="VSCode" style="width:28px;height:28px;">`
+                        ];
+                        const iconsInner = [
+                            `<i class='bx bxl-c-plus-plus' title="C++" style="color:#00599c;"></i>`,
+                            `<i class='bx bxl-c-plus-plus' title="C" style="color:#00599c;"></i>`,
+                            `<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/excel.svg" alt="Excel" title="Excel" style="width:24px;height:24px;">`,
+                            `<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" title="GitHub" style="width:24px;height:24px;">`
+                        ];
+
+                        function createRingIcons(ringClass, icons, radius, iconSize) {
+                            const ring = document.querySelector('.' + ringClass);
+                            ring.innerHTML = '';
+                            icons.forEach((icon, i) => {
+                                const angle = (2 * Math.PI * i) / icons.length;
+                                const x = 160 + radius * Math.cos(angle) - iconSize/2;
+                                const y = 160 + radius * Math.sin(angle) - iconSize/2;
+                                const div = document.createElement('div');
+                                div.className = 'ring-icon';
+                                div.style.position = 'absolute';
+                                div.style.left = x + 'px';
+                                div.style.top = y + 'px';
+                                div.style.width = iconSize + 'px';
+                                div.style.height = iconSize + 'px';
+                                div.style.display = 'flex';
+                                div.style.alignItems = 'center';
+                                div.style.justifyContent = 'center';
+                                div.innerHTML = icon;
+                                ring.appendChild(div);
+                            });
+                        }
+                        createRingIcons('ring-outer', iconsOuter, 140, 40);
+                        createRingIcons('ring-middle', iconsMiddle, 110, 34);
+                        createRingIcons('ring-inner', iconsInner, 80, 28);
+
+                        // Animation
+                        function animateRings() {
+                            let angleOuter = 0, angleMiddle = 0, angleInner = 0;
+                            setInterval(() => {
+                                angleOuter += 0.5;
+                                angleMiddle -= 0.8;
+                                angleInner += 1.2;
+                                document.querySelector('.ring-outer').style.transform = `rotate(${angleOuter}deg)`;
+                                document.querySelector('.ring-middle').style.transform = `rotate(${angleMiddle}deg)`;
+                                document.querySelector('.ring-inner').style.transform = `rotate(${angleInner}deg)`;
+                            }, 20);
+                        }
+                        animateRings();
+                        </script>
+                        <style>
+                        .circular-ring {
+                            position: relative;
+                            width: 320px;
+                            height: 320px;
+                            margin: 0 auto;
+                        }
+                        .ring {
+                            position: absolute;
+                            left: 0; top: 0;
+                            width: 320px; height: 320px;
+                            pointer-events: none;
+                        }
+                        .ring-icon {
+                            background: rgba(255,255,255,0.85);
+                            border-radius: 50%;
+                            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+                            pointer-events: auto;
+                            transition: transform 0.2s;
+                        }
+                        .ring-icon:hover {
+                            transform: scale(1.2);
+                            z-index: 2;
+                        }
+                        </style>
+                    </div>
+                </div>
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-link"><i class='bx bx-down-arrow-alt'></i>Scroll down</a>
+                </div>
+            </section>
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">About</h2>
+                <div class="about__container bd-grid">
+                    <!-- Profile Card with Animation -->
+                    <div class="about__img profile-card">
+                        <img src="admin1-removebg-preview.png" alt="Shubham Suryawanshi" class="profile-img">
+                        <div class="profile-glow"></div>
+                    </div>
+                    <div class="about__content">
+                        <h2 class="about__subtitle typewriter" id="about-typed"></h2>
+                        <span class="about__profession">Data Scientist / Data Analyst</span>
+                        <ul class="about__highlights">
+                            <li><i class='bx bx-check-circle'></i> Python, SQL, Power BI, Tableau, Excel more.</li>
+                            <li><i class='bx bx-check-circle'></i> Data Visualization & Dashboarding</li>
+                            <li><i class='bx bx-check-circle'></i> Machine Learning & AI Enthusiast</li>
+                            <li><i class='bx bx-check-circle'></i> Problem Solver & Team Player</li>
+                        </ul>
+                        <p class="about__text">
+                            I am passionate about transforming raw data into meaningful insights and actionable strategies. I love building data-driven solutions that make a real impact.
+                        </p>
+                        <div class="about__social">
+                            <a href="https://www.linkedin.com/in/shubham-suryawanshi-097a33293" class="about__social-icon" target="_blank" rel="noopener" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://github.com/shubhamSuryawanshi221" class="about__social-icon" target="_blank" rel="noopener" title="GitHub"><i class='bx bxl-github'></i></a>
+                            <a href="mailto:shubhamanils2003@gmail.com" class="about__social-icon" title="Email"><i class='bx bx-envelope'></i></a>
+                        </div>
+                        <a href="resume.pdf" class="about__btn" target="_blank">Download CV</a>
+                    </div>
+                </div>
+                <style>
+                    .about__container {
+                        align-items: center;
+                        gap: 2rem;
+                    }
+                    .profile-card {
+                        position: relative;
+                        width: 220px;
+                        height: 220px;
+                        margin: 0 auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .profile-img {
+                        width: 180px;
+                        height: 180px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        border: 6px solid #f2c811;
+                        box-shadow: 0 8px 32px rgba(55, 118, 171, 0.15);
+                        z-index: 2;
+                        background: #fff;
+                        transition: transform 0.3s;
+                    }
+                    .profile-card:hover .profile-img {
+                        transform: scale(1.07) rotate(-2deg);
+                    }
+                    .profile-glow {
+                        position: absolute;
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                        background: radial-gradient(circle, #f2c81155 0%, #3776ab22 80%, transparent 100%);
+                        z-index: 1;
+                        animation: glowPulse 2.5s infinite alternate;
+                    }
+                    @keyframes glowPulse {
+                        0% { opacity: 0.7; }
+                        100% { opacity: 1; }
+                    }
+                    .about__content {
+                        min-width: 260px;
+                    }
+                    .about__subtitle.typewriter {
+                        font-size: 2rem;
+                        font-weight: 700;
+                        color: #3776ab;
+                        min-height: 2.5em;
+                        margin-bottom: 0.5em;
+                        letter-spacing: 1px;
+                    }
+                    .about__profession {
+                        display: block;
+                        font-size: 1.1rem;
+                        color: #f2c811;
+                        margin-bottom: 1em;
+                        font-weight: 600;
+                    }
+                    .about__highlights {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0 0 1em 0;
+                    }
+                    .about__highlights li {
+                        margin-bottom: 0.4em;
+                        font-size: 1rem;
+                        color: #444;
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5em;
+                    }
+                    .about__highlights i {
+                        color: #3776ab;
+                        font-size: 1.2em;
+                    }
+                    .about__text {
+                        margin-bottom: 1em;
+                        color: #333;
+                    }
+                    .about__social {
+                        margin-bottom: 1em;
+                    }
+                    .about__social-icon {
+                        font-size: 1.5em;
+                        margin-right: 0.7em;
+                        color: #3776ab;
+                        transition: color 0.2s, transform 0.2s;
+                    }
+                    .about__social-icon:hover {
+                        color: #f2c811;
+                        transform: scale(1.2);
+                    }
+                    .about__btn {
+                        display: inline-block;
+                        padding: 0.6em 1.5em;
+                        background: linear-gradient(90deg, #3776ab 60%, #f2c811 100%);
+                        color: #fff;
+                        border-radius: 30px;
+                        font-weight: 600;
+                        text-decoration: none;
+                        box-shadow: 0 2px 8px rgba(55,118,171,0.08);
+                        transition: background 0.2s, transform 0.2s;
+                    }
+                    .about__btn:hover {
+                        background: linear-gradient(90deg, #f2c811 60%, #3776ab 100%);
+                        transform: translateY(-2px) scale(1.04);
+                    }
+                    @media (max-width: 768px) {
+                        .about__container {
+                            flex-direction: column;
+                            gap: 1.5rem;
+                        }
+                        .about__content {
+                            text-align: center;
+                        }
+                    }
+                </style>
+                <script>
+                    // Typewriter effect for About subtitle
+                    const aboutTypedText = "I'm Shubham Suryawanshi";
+                    let aboutTypedIndex = 0;
+                    function typeAboutSubtitle() {
+                        const el = document.getElementById('about-typed');
+                        if (el && aboutTypedIndex <= aboutTypedText.length) {
+                            el.textContent = aboutTypedText.slice(0, aboutTypedIndex) + (aboutTypedIndex % 2 === 0 ? "|" : "");
+                            aboutTypedIndex++;
+                            setTimeout(typeAboutSubtitle, 80);
+                        } else if (el) {
+                            el.textContent = aboutTypedText;
+                        }
+                    }
+                    document.addEventListener("DOMContentLoaded", typeAboutSubtitle);
+                </script>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills__container bd-grid">
+                    <div class="skills__group">
+                        <h3 class="skills__group-title">Programming Languages</h3>
+                        <ul class="skills__list">
+                            <li>Python, Java, C, C++, HTML, CSS, JavaScript, SQL</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="skills__group">
+                        <h3 class="skills__group-title">Web Development</h3>
+                        <ul class="skills__list">
+                            <li>HTML, CSS, JS, PHP, SQL, XAMPP, Visual Studio Code </li>
+                            <li>Git &amp; GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="skills__group">
+                        <h3 class="skills__group-title">Data Science &amp; Analytics</h3>
+                        <ul class="skills__list">
+                            <li>Power BI (DAX, KPIs, Dashboards), Tableau, Jupyter Notebook, DBMS, Power Query</li>
+                             <li>Excel (Pivot Tables, Charts, Data Cleaning)</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="skills__group">
+                        <h3 class="skills__group-title">Libraries &amp; Tools</h3>
+                        <ul class="skills__list">
+                            <li>Pandas, NumPy, Matplotlib, Scikit-learn</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="skills__group">
+                        <h3 class="skills__group-title">Networking</h3>
+                        <ul class="skills__list">
+                            <li>CCNA (Cisco Certified Network Associate)</li>
+                        </ul>
+                    </div>
+                    <div class="skills__group">
+                        <h3 class="skills__group-title">Platforms &amp; Software</h3>
+                        <ul class="skills__list">
+                            <li>Microsoft Word, PowerPoint, Windows OS </li>
+                        
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== PORTFOLIO =====-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section-title">Portfolio</h2>
+             
+                <div class="portfolio__container bd-grid">
+                    <div class="portfolio__img">
+                        <img src="Robocart.jpg" alt="rw">
+
+                        <div class="portfolio__link">
+                            <a href="https://github.com/shubhamSuryawanshi221/Robocart" class="portfolio__link-name">Clik for more info</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="ck.png" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="https://shubhamsuryawanshi221.github.io/coderskatta1.github.io/" class="portfolio__link-name">Click for more info</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="Transport domain.png" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="https://github.com/shubhamSuryawanshi221/-Transport-Dashboard-Delivery-Analysis-" class="portfolio__link-name">Click for more info</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="Student survey.png" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="https://github.com/shubhamSuryawanshi221/Student-survey-Project" class="portfolio__link-name">Click for more info</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="employee.png" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="https://github.com/shubhamSuryawanshi221/Employee-Hiring-and-History" class="portfolio__link-name">Click for more info</a>
+                        </div>
+                    </div>
+                
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <span class="contact__text">shubhamanils2003@gmail.com</span>
+                        <h3 class="contact__subtitle">Maharashtra,India</h3>
+                        <span class="contact__text">India</span>
+                    </div>
+
+                    <form id="contact-form" class="contact__form" autocomplete="off">
+                        <div class="contact__inputs">
+                            <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                            <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                        </div>
+
+                        <label for="contact-message" class="contact__label" style="display:none;">Message</label>
+                        <textarea name="message" id="contact-message" cols="0" rows="10" class="contact__input" placeholder="Your message" title="Please enter your message" required></textarea>
+
+                        <input type="submit" value="Submit" class="contact__button">
+                        <div id="contact-status" style="margin-top:1em;color:#3776ab;font-weight:600;"></div>
+                    </form>
+                </div>
+                <script>
+                // Simple AJAX form handler (no backend, just demo)
+                document.getElementById('contact-form').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // Simulate successful submission
+                    document.getElementById('contact-status').textContent = "Thank you! Your message has been sent.";
+                    this.reset();
+                });
+                </script>
+            </section>
+
+            <!--===== FOOTER =====-->
+            <footer class="footer section">
+                <div class="footer__container bd-grid">
+                    <!-- Profile & About -->
+                    <div class="footer__data">
+                        <div class="footer__avatar-glow">
+                            <img src="admin1-removebg-preview.png" alt="Shubham Suryawanshi" class="footer__avatar">
+                        </div>
+                        <h2 class="footer__title">Shubham Suryawanshi</h2>
+                        <p class="footer__text">
+                            Passionate Data Scientist & Analyst specializing in Python, SQL, Power BI, and Machine Learning.<br>
+                            Open to collaboration, freelance projects, and new opportunities.<br>
+                            <span class="footer__icon-text"><i class='bx bx-envelope'></i> shubhamanils2003@gmail.com</span><br>
+                            <span class="footer__icon-text"><i class='bx bx-map'></i> Maharashtra, India</span>
+                        </p>
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="footer__data">
+                        <h2 class="footer__title">Explore</h2>
+                        <ul class="footer__links">
+                            <li><a href="#home" class="footer__link"><i class='bx bx-home'></i> Home</a></li>
+                            <li><a href="#about" class="footer__link"><i class='bx bx-user'></i> About</a></li>
+                            <li><a href="#skills" class="footer__link"><i class='bx bx-code-alt'></i> Skills</a></li>
+                            <li><a href="#portfolio" class="footer__link"><i class='bx bx-briefcase'></i> Portfolio</a></li>
+                            <li><a href="#contact" class="footer__link"><i class='bx bx-envelope'></i> Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Social & Badges -->
+                    <div class="footer__data">
+                        <h2 class="footer__title">Connect</h2>
+                        <div class="footer__social-icons">
+                            <a href="https://www.linkedin.com/in/shubham-suryawanshi-097a33293" class="footer__icon" target="_blank" rel="noopener" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                            <a href="https://www.instagram.com/shubham_221_?igsh=MXdjcm1hZ3V4ZHA5ZA==" class="footer__icon" target="_blank" rel="noopener" title="Instagram"><i class='bx bxl-instagram'></i></a>
+                            <a href="https://github.com/shubhamSuryawanshi221" class="footer__icon" target="_blank" rel="noopener" title="GitHub"><i class='bx bxl-github'></i></a>
+                            <a href="https://leetcode.com/u/ShubhamSuryawanshi_221/" class="footer__icon" target="_blank" rel="noopener" title="LeetCode"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/leetcode.svg" alt="LeetCode" style="width:1.3em;height:1.3em;vertical-align:middle;"></a>
+                        </div>
+                        <a href="resume.pdf" class="footer__resume-btn" target="_blank"><i class='bx bx-download'></i> Resume</a>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <span>&copy; <span id="footer-year"></span> Shubham Suryawanshi. All rights reserved.</span>
+                    <span class="footer__scrolltop"><a href="#home" title="Back to top"><i class='bx bx-chevron-up'></i></a></span>
+                </div>
+                <style>
+                    .footer {
+                        background: linear-gradient(120deg, #3776ab 70%, #f2c811 100%);
+                        color: #fff;
+                        padding-top: 2.5em;
+                        padding-bottom: 1.5em;
+                        margin-top: 3em;
+                        border-top-left-radius: 2em;
+                        border-top-right-radius: 2em;
+                        box-shadow: 0 -4px 32px rgba(55,118,171,0.10);
+                    }
+                    .footer__container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 2.5em;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                    }
+                    .footer__data {
+                        flex: 1 1 220px;
+                        min-width: 220px;
+                        margin-bottom: 1.5em;
+                    }
+                    .footer__avatar-glow {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 0.7em;
+                    }
+                    .footer__avatar {
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        border: 3px solid #fff;
+                        box-shadow: 0 0 18px #f2c81188, 0 2px 12px #3776ab44;
+                        background: #fff;
+                        object-fit: cover;
+                        transition: transform 0.3s;
+                    }
+                    .footer__avatar-glow:hover .footer__avatar {
+                        transform: scale(1.08) rotate(-2deg);
+                    }
+                    .footer__title {
+                        font-size: 1.3em;
+                        font-weight: 700;
+                        margin-bottom: 0.5em;
+                        color: #fff;
+                        letter-spacing: 1px;
+                    }
+                    .footer__text {
+                        font-size: 1em;
+                        color: #f8f8f8;
+                        margin-bottom: 1em;
+                    }
+                    .footer__icon-text {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.4em;
+                        font-size: 0.98em;
+                    }
+                    .footer__links {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    .footer__link {
+                        color: #fff;
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                        gap: 0.5em;
+                        margin-bottom: 0.5em;
+                        font-size: 1em;
+                        transition: color 0.2s;
+                    }
+                    .footer__link:hover {
+                        color: #f2c811;
+                    }
+                    .footer__social-icons {
+                        display: flex;
+                        gap: 1em;
+                        margin-bottom: 1em;
+                    }
+                    .footer__icon {
+                        font-size: 1.7em;
+                        color: #fff;
+                        background: rgba(255,255,255,0.08);
+                        border-radius: 50%;
+                        padding: 0.3em;
+                        transition: background 0.2s, color 0.2s, transform 0.2s;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .footer__icon:hover {
+                        background: #fff;
+                        color: #3776ab;
+                        transform: scale(1.15);
+                    }
+                    .footer__resume-btn {
+                        display: inline-block;
+                        margin-top: 0.5em;
+                        padding: 0.5em 1.3em;
+                        border-radius: 22px;
+                        background: #fff;
+                        color: #3776ab;
+                        font-weight: 600;
+                        text-decoration: none;
+                        font-size: 1em;
+                        box-shadow: 0 2px 8px #3776ab22;
+                        transition: background 0.2s, color 0.2s, transform 0.2s;
+                    }
+                    .footer__resume-btn:hover {
+                        background: #f2c811;
+                        color: #fff;
+                        transform: translateY(-2px) scale(1.04);
+                    }
+                    .footer__bottom {
+                        border-top: 1px solid #fff2;
+                        margin-top: 2em;
+                        padding-top: 1em;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-size: 0.98em;
+                        color: #fff;
+                        flex-wrap: wrap;
+                    }
+                    .footer__scrolltop a {
+                        color: #fff;
+                        font-size: 2em;
+                        background: #3776ab;
+                        border-radius: 50%;
+                        padding: 0.15em 0.35em;
+                        margin-left: 1em;
+                        transition: background 0.2s, color 0.2s, transform 0.2s;
+                    }
+                    .footer__scrolltop a:hover {
+                        background: #f2c811;
+                        color: #3776ab;
+                        transform: scale(1.15);
+                    }
+                    @media (max-width: 900px) {
+                        .footer__container {
+                            flex-direction: column;
+                            align-items: stretch;
+                            gap: 1.5em;
+                        }
+                        .footer__bottom {
+                            flex-direction: column;
+                            gap: 0.7em;
+                            text-align: center;
+                        }
+                    }
+                </style>
+                <script>
+                    // Set current year in footer
+                    document.addEventListener("DOMContentLoaded", function() {
+                        document.getElementById("footer-year").textContent = new Date().getFullYear();
+                    });
+                </script>
+            </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="main.js"></script>
+    </body>
+</html>
