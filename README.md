@@ -52,7 +52,7 @@ This is my **personal portfolio website** built to showcase my skills, projects,
 <img src="Portfolio.png" alt="Projects" width="100%" />
 
 ### 📞 Contact Form
-<img src="contact.jpg" alt="Contact Page" width="100%" />
+<img src="Contact.jpg" alt="Contact Page" width="100%" />
 
 ---
 
