@@ -10,7 +10,7 @@
 
 ## 🚀 Live Website
 
-👉 [Click Here to View My Portfolio](https://shubhamSuryawanshi221.github.io/Portfolio)  
+👉 [LIVE](https://shubhamSuryawanshi221.github.io/Portfolio)  
 
 ---
 
@@ -43,16 +43,16 @@ This is my **personal portfolio website** built to showcase my skills, projects,
 ## 🖼️ Screenshots
 
 ### 🏠 Home Page
-<img src="screenshots/homepage.jpg" alt="Home Page" width="100%" />
+<img src="homepage.png" alt="Home Page" width="100%" />
 
 ### 👤 About Me
-<img src="screenshots/about.jpg" alt="About Me" width="100%" />
+<img src="About.png" alt="About Me" width="100%" />
 
 ### 💼 Projects Section
-<img src="screenshots/projects.jpg" alt="Projects" width="100%" />
+<img src="Portfolio.png" alt="Projects" width="100%" />
 
 ### 📞 Contact Form
-<img src="screenshots/contact.jpg" alt="Contact Page" width="100%" />
+<img src="contact.jpg" alt="Contact Page" width="100%" />
 
 ---
 
